@@ -168,10 +168,8 @@ $page = $_GET['page'] ?? 'dashboard';
         <a href="index.php?page=kategori" class="<?= $page == 'kategori' ? 'active' : '' ?>">Kategori</a>
         <a href="index.php?page=lokasi" class="<?= $page == 'lokasi' ? 'active' : '' ?>">Lokasi/Ruangan</a>
         <a href="index.php?page=peminjaman" class="<?= $page == 'peminjaman' ? 'active' : '' ?>">Peminjaman</a>
+        <a href="index.php?page=laporan" class="<?= $page == 'laporan' ? 'active' : '' ?>">Laporan</a>
         <a href="index.php?page=users" class="<?= $page == 'users' ? 'active' : '' ?>">Manajemen User</a>
-        <a href="index.php?page=laporan_barang_rusak" class="<?= $page == 'laporan_barang_rusak' ? 'active' : '' ?>">Laporan Barang Rusak</a>
-        <a href="index.php?page=riwayat_peminjaman" class="<?= $page == 'riwayat_peminjaman' ? 'active' : '' ?>">Riwayat Peminjaman</a>
-        <a href="index.php?page=rekap_stok_per_kategori" class="<?= $page == 'rekap_stok_per_kategori' ? 'active' : '' ?>">Rekap Stok Per Kategori</a>
         <a href="logout.php">Logout</a>
     </div>
 
@@ -184,9 +182,7 @@ $page = $_GET['page'] ?? 'dashboard';
             'kategori' => 'kategori.php',
             'lokasi' => 'lokasi.php',
             'peminjaman' => 'peminjaman.php',
-            'laporan_barang_rusak' => 'laporan_barang_rusak.php',
-            'riwayat_peminjaman' => 'riwayat_peminjaman.php',
-            'rekap_stok_per_kategori' => 'rekap_stok_per_kategori.php',
+            'laporan' => 'laporan.php',
             'users' => 'users.php'
         ];
         if (isset($pages[$page])) {
